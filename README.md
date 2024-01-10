@@ -1,6 +1,6 @@
 squid
 ====
-squid proxyサーバのDocker化サンプル
+[squid cache](http://www.squid-cache.org) のDocker化サンプルサーバのDocker化サンプル
 
 イメージのTimeZoneは `Asia/Tokyo` に変更済み
 
