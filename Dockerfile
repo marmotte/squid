@@ -17,6 +17,10 @@ RUN grep -E ^logfile_rotate ${SQUID_CONF} || \
     echo "logfile_rotate 0" >> ${SQUID_CONF}
 RUN grep -E ^access_log ${SQUID_CONF} || \
     echo "access_log stdio:/proc/self/fd/1" >> ${SQUID_CONF}
+RUN grep -E ^cache_mem ${SQUID_CONF} || \
+    echo "cache_mem 0 MB" >> ${SQUID_CONF}
+RUN grep -E ^cache_store_log ${SQUID_CONF} || \
+    echo "cache_store_log none" >> ${SQUID_CONF}
 
 VOLUME /etc/squid/
 EXPOSE 3128
