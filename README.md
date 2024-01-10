@@ -2,6 +2,8 @@ squid
 ====
 squid proxyサーバのDocker化サンプル
 
+イメージのTimeZoneは `Asia/Tokyo` に変更済み
+
 ## ビルド
 ```
 $ docker build . -t marmotte/squid
